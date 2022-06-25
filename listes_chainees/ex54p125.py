@@ -15,4 +15,4 @@ def corection_identiques(l1, l2):
 		return l2 is None
 	if l2 is None:
 		return l1 is None
-	return l1.valeur == l2.valeur and identiques(l1.suivante, l2.suivante)
+	return l1.valeur == l2.valeur and correction_identiques(l1.suivante, l2.suivante)

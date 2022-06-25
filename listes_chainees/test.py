@@ -4,6 +4,7 @@ import ex48p124
 import ex50p124
 import ex54p125
 import ex58p125
+import ex55p125
 
 class TestEx(unittest.TestCase):
     def test_ex48p124(self):
@@ -52,6 +53,23 @@ class TestEx(unittest.TestCase):
         if ex58p125.derniere_cellule(lst) == 2:
             test_ok += 1
         self.assertEqual(test_ok, 3)
+
+    def test_ex55p125(self):
+        test_ok = 0
+        x = 3
+        lst = config.Cellule(1, config.Cellule(2, config.Cellule(7, config.Cellule(9, None))))
+        if ex54p125.identiques(ex55p125.inserer(x, lst), config.Cellule(1, config.Cellule(2, config.Cellule(3, config.Cellule(7, config.Cellule(9, None)))))):
+            test_ok += 1
+        lst = config.Cellule(4, config.Cellule(7, None))
+
+        if ex54p125.identiques(ex55p125.inserer(x, lst), config.Cellule(3, config.Cellule(4, config.Cellule(7, None)))):
+            test_ok += 1
+
+        lst = config.Cellule(2, None)
+        if ex54p125.identiques(ex55p125.inserer(x, lst), config.Cellule(2, config.Cellule(3, None))):
+            test_ok += 1
+        self.assertEqual(test_ok, 3)
+
 
 if __name__ == '__main__':
     unittest.main()

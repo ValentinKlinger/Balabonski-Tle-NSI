@@ -4,9 +4,9 @@ class Cellule:
 		self.suivante = s
 
 class Liste:
-	def __init(self):
+	def __init__(self):
 		self.tete = None
-	
+
 	def est_vide(self):
 		return self.tete is None
 
@@ -15,7 +15,7 @@ class Liste:
 
 	def __len__(self):
 		return longueur(self.tete)
-	
+
 	def __getitem__(self, n):
 		return nieme_element(n, self.tete)
 
@@ -51,9 +51,21 @@ def nieme_element(n, lst):
 		return nieme_element(n - 1, lst.suivante)
 
 def renverser(lst):
-	r = None 
+	r = None
 	c = lst
 	while c is not None:
 		r = Cellule(c.valeur, r)
 		c = c.suivante
 	return r
+
+def convertir(lst):
+	c = lst
+	list = []
+	while c is not None:
+		list.append(c.valeur)
+		c = c.suivante
+	return list
+
+
+#def cree_cellule(liste_python):
+#	for element in range(liste_python):

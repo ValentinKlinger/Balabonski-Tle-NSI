@@ -13,5 +13,4 @@ def corection_derniere_cellule(lst):
     c = lst
     while c.suivante is not None:
         c = c.suivante
-    print(c)
     return c
