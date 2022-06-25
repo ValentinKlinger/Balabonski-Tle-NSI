@@ -1,5 +1,5 @@
 # réécrire la fonction nieme_element (programme 20 page 114) avec une boucle while.
-
+import config
 # réponse :
 def nieme_element(n, lst):
 	c = lst
@@ -13,7 +13,7 @@ def nieme_element(n, lst):
 		return c.valeur
 
 # solution du manuel :
-def nieme_element(n, lst):
+def corection_nieme_element(n, lst):
 	i = 0
 	c = lst
 	while i < n and c is not None:
