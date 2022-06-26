@@ -1,4 +1,5 @@
-# écrire une fonction derniere_cellule(lst) qui renvoie la dernière cellule de la liste lst. On supose la liste lst non vide
+# écrire une fonction derniere_cellule(lst) qui renvoie la dernière cellule de la liste lst.
+# On supose la liste lst non vide
 import config
 # réponse
 def derniere_cellule(lst):

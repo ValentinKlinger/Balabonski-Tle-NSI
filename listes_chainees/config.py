@@ -1,3 +1,5 @@
+# Module du cours créé dans le cours
+
 class Cellule:
 	def __init__(self, v, s):
 		self.valeur = v
@@ -65,7 +67,3 @@ def convertir(lst):
 		list.append(c.valeur)
 		c = c.suivante
 	return list
-
-
-#def cree_cellule(liste_python):
-#	for element in range(liste_python):

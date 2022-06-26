@@ -1,4 +1,7 @@
-# écrire une fonction inserer(x, lst) qui prend en arguments un entier x et une liste lst, supposée triée par ordre croissant, et qui renvoie une nouvelle liste dans la quel x a été inséré à sa place. Ainsi, insérer la valeur 3 dans la liste 1, 2, 5, 8 renvoie la liste 1, 2, 3, 5, 8. On suggère de l'écrire comme une fonction récursive.
+# écrire une fonction inserer(x, lst) qui prend en arguments un entier x et une liste lst,
+#supposée triée par ordre croissant, et qui renvoie une nouvelle liste dans la quel x a été inséré à sa place.
+# Ainsi, insérer la valeur 3 dans la liste 1, 2, 5, 8 renvoie la liste 1, 2, 3, 5, 8.
+# On suggère de l'écrire comme une fonction récursive.
 import config
 
 # réponse
