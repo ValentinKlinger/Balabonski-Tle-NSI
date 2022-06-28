@@ -8,11 +8,11 @@ def affiche_liste_recursive(lst):
     if c is None:
         pass
     else:
-        print(c.valeur, ' \n')
-        return affiche_liste_recursive(c.suivante)
+        print(c.valeur, end=" ")
+        affiche_liste_recursive(c.suivante)
 
 def affiche_liste_loop(lst):
     c = lst
     while c is not None:
-        print(c.valeur, ' \n')
+        print(c.valeur, end=" ")
         c = c.suivante
