@@ -1,6 +1,6 @@
 # écrire une fonction derniere_cellule(lst) qui renvoie la dernière cellule de la liste lst.
 # On supose la liste lst non vide
-import config
+import lib_liste_chainees
 # réponse
 def derniere_cellule(lst):
     c = lst

@@ -1,12 +1,12 @@
 # réécrire la fonction nieme_element (programme 20 page 114) avec une boucle while.
-import config
+import lib_liste_chainees
 # réponse :
 def nieme_element(n, lst):
 	c = lst
 	while c is not None and n != 0:
 		n = n - 1
 		c = lst.suivante
-	
+
 	if c is None:
 		raise IndexError("indice invalide")
 	if n == 0:
